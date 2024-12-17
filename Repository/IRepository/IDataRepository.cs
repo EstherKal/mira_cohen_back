@@ -8,6 +8,7 @@ namespace Repository
 {
     public interface IDataRepository<T>
     {
+
         Task<List<T>> GetAllAsync();
         Task<T> GetByIdAsync(string id);
         Task<T> AddAsync(T entity);
